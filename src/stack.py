@@ -35,3 +35,6 @@ class Stack:
         previous_top = self.top
         self.top = self.top.next_node
         return previous_top
+
+    def __str__(self):
+        return f'{self.top}'

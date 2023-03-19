@@ -18,9 +18,14 @@ def test_push():
 
 def test_pop():
     stack = Stack()
-    stack.push('test_data')
+    stack.push('data')
     node_1 = stack.top
-    stack.push('test_data_1')
+    stack.push('data_1')
     node_2 = stack.top
     assert stack.pop() is node_2
     assert stack.pop() is node_1
+
+
+def test__str__():
+    stack = Stack()
+    assert str(stack) == 'None'
